@@ -5,6 +5,17 @@ const nav2 = document.getElementById ('nav-2');
 const nav3 = document.getElementById ('nav-3');
 const nav4 = document.getElementById ('nav-4');
 const nav5 = document.getElementById ('nav-5');
+const tNav1 = document.getElementById ('Tnav1');
+const tNav2 = document.getElementById ('Tnav2');
+const tNav3 = document.getElementById ('Tnav3');
+const tNav4 = document.getElementById ('Tnav4');
+const dynamicH2 = document.getElementById ('Dynamic-H2');
+const dynamicP = document.getElementById ('Dynamic-P');
+const tNavigation = document.querySelectorAll('.nav-circle');
+const testimonialText = document.querySelector('#Testimonial-text');
+const testimonialContainer = document.getElementsByClassName('Testimonial-text')[0];
+
+
 
 
 function toggleNav(){
@@ -45,6 +56,67 @@ else {
 };
 
 };
+
+// Testimonial nav content
+const navOne = {
+    h2: "We worked great together! Now I have a killer portfolio to show off.",
+    p: "ANNA WILLIAMSON",
+};
+const navTwo = {
+    h2: "I'm amazed by the high quality portraits Jessica delivered.",
+    p: "SADIE SMITH",
+};
+const navThree = {
+    h2: "Enjoyed working with Jessica very much. Really pleased with the portraits!",
+    p: "JOSH STEVENS",
+};
+const navFour = {
+    h2: "Definetley worth every Dollar! I'm amazed by the high quality portraits",
+    p: "Rodney Dave",
+};
+
+// event listener for testimonial section
+
+    tNavigation.forEach((btn) => btn.addEventListener('click', function (e) {
+        e.preventDefault;
+        testimonialContainer.classList.remove("GalleryAnimation");
+        void testimonialContainer.offsetWidth;
+        testimonialContainer.classList.add("GalleryAnimation");
+    if (btn.id == "Tnav1") {
+        dynamicH2.innerHTML = navOne.h2;
+        dynamicP.innerHTML = navOne.p;
+    } else if (btn.id == "Tnav2") {
+        dynamicH2.innerHTML = navTwo.h2;
+        dynamicP.textContent = navTwo.p;
+    } else if (btn.id == "Tnav3") {
+        dynamicH2.innerHTML = navThree.h2;
+        dynamicP.innerHTML = navThree.p;
+    } else if (btn.id == "Tnav4") {
+        dynamicH2.innerHTML = navFour.h2;
+        dynamicP.innerHTML = navFour.p;
+    }
+
+    if (btn.id == "Tnav1") {
+        colorSwitcher(tNavigation, btn)
+    } else if (btn.id == "Tnav2") {
+        colorSwitcher(tNavigation, btn)
+    } else if (btn.id == "Tnav3") {
+        colorSwitcher(tNavigation, btn)
+    } else if (btn.id == "Tnav4") {
+        colorSwitcher(tNavigation, btn)
+    };
+
+    function colorSwitcher(el, elHolder) {
+        for (let C = 0; C < 4; C++) {
+            el[C].style.backgroundColor = ""
+        }
+        elHolder.style.backgroundColor = "white";
+    };
+
+
+
+},false));
+
 
 
 
