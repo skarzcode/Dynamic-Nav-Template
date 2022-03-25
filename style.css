@@ -280,12 +280,12 @@ section#home a {
 /* about */
 
 section#about {
-  background-color: var(--navColor2);
+  background-color: #236267;
   min-height: 100vh;
 }
 
 .about-container{
-  width: 98%;
+  width: 99%;
   height: 100%;
   background-color: white;
   display: flex;
@@ -331,13 +331,13 @@ section#about {
 /* projects */
 
 section#skills {
-  background-color: var(--navColor3);
+  background-color: #236267;
   min-height: 100vh;
   height: auto;
 }
 
 .projects-container{
-  width: 98%;
+  width: 99%;
   height: auto;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -479,13 +479,13 @@ text-align: center;
 /* skills*/
 
 section#projects {
-  background-color: var(--navColor4);
+  background-color: #236267;
   min-height: 100vh;
   height: auto;
 }
 
 .skills-outer-container{
-  width: 98%;
+  width: 99%;
   height: auto;
   background-color: rgb(255, 255, 255);
   display: flex;
