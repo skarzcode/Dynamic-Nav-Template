@@ -17,8 +17,8 @@
       <ul>
         <li id="nav-1"><a href="#home">HOME</a></li>
         <li id="nav-2"><a href="#about">ABOUT</a></li>
-        <li id="nav-3"><a href="#skills">SKILLS</a></li>
         <li id="nav-4"><a href="#projects">PROJECTS</a></li>
+        <li id="nav-3"><a href="#skills">SKILLS</a></li>
         <li id="nav-5"><a href="#contact">CONTACTS</a></li>
       </ul>
     </nav>
@@ -41,13 +41,13 @@
     <div class="about-container">
       <!-- image-container -->
       <div class="about-image">
-        <img
+        <img class="reveal3"
           src="https://assets.website-files.com/5e2ed4f912d9353e58fbda27/5e2efc0a517d646db02524f7_allef-vinicius-YG97wpX0OEg-unsplash-p-800.jpeg"
           alt="Picture of women">
       </div>
       <!-- text-container -->
       <div class="about-text-container">
-        <div class="inner-container">
+        <div class="inner-container reveal4">
           <h1>Hi, I'm Jessica. Portrait photographer from London.</h1>
           <p>Nulla eleifend pulvinar purus, molestie euismod odio imperdiet ac. Ut sit amet erat nec nibh rhoncus varius
             in non lorem. Donec interdum, lectus in convallis pulvinar, enim elit porta sapien, vel finibus erat felis
@@ -58,13 +58,13 @@
             vulputate purus quis, pulvinar massa. Nulla placerat ullamcorper molestie. Maecenas feugiat mollis egestas.
             Proin vehicula lorem non turpis varius venenatis. Maecenas dapibus hendrerit diam, ac auctor est dignissim
             ac. Suspendisse tincidunt pulvinar ex. </p>
-          <button>More About Me</button>
+          <a href="#skills" class="anchor-button"><button class="cta-btn">View More</button></a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills">
+  <section id="projects">
     <!-- outer-container/ flex -->
     <div class="projects-container">
       <h1>Gallery</h1>
@@ -72,7 +72,7 @@
       <!-- Image-Row Conatiner -->
       <div class="image-row-container">
       <!-- Image Rows -->
-      <div class="image-container">
+      <div class="image-container reveal3">
         <a href="https://unsplash.com/photos/iIjResyhhW0" target="_blank">
         <img
           src="https://images.unsplash.com/photo-1619603364904-c0498317e145?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
@@ -91,7 +91,7 @@
 
       </div>
 
-      <div class="image-container">
+      <div class="image-container reveal hidden">
         <a href="https://unsplash.com/photos/-XzYibmmI94" target="_blank">
         <img
           src="https://images.unsplash.com/photo-1623930354140-03c5ae186bf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
@@ -110,7 +110,7 @@
 
       </div>
 
-      <div class="image-container hidden">
+      <div class="image-container reveal4">
         <a href="https://unsplash.com/photos/hbDo0CgrXbY" target="_blank">
         <img
           src="https://images.unsplash.com/photo-1616786541567-7e855a02b5a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
@@ -129,7 +129,7 @@
 
       </div>
     </div>
-    <div class="Testimonials">
+    <div class="Testimonials reveal">
       <div class="Testimonial-text" id="Testimonial-text">
         <h2 id="Dynamic-H2">We worked great together! Now I have a killer portfolio to show off.</h2>
         <p id="Dynamic-P">ANNA WILLIAMSON</p>
@@ -144,11 +144,11 @@
   </div>
   </section>
 
-  <section id="projects">
+  <section id="skills">
     <div class="skills-outer-container">
       <h1>skills</h1>
     <div class="skills-container">
-      <div class="skills-grid">
+      <div class="skills-grid reveal4">
         <div class="one">
           <div class="content-grid">
           <img src="https://assets.website-files.com/5e2ed4f912d9353e58fbda27/5e3d8675a3e847f650ee5c62_icons8-portrait-50.png" alt="Portrait png">
@@ -178,13 +178,39 @@
         
       </div>
 
-      <div class="skills-image">
+      <div class="skills-image reveal">
         <img src="https://assets.website-files.com/5e2ed4f912d9353e58fbda27/5e2f5df781bcaa7cb5be5a72_allef-vinicius-HlMbtqnt7HM-unsplash(1)-p-500.jpeg" alt="Picture of women">
       </div>
     </div>
   </div>
   </section>
-  <section id="contact"><h1>Available Anytime</h1></section>
+  <section id="contact">
+    <div class="Contact-container reveal2">
+      <div class="contact-cta">
+        <h1>Need some beautiful portraits? Let's work together!</h1>
+      </div>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="#">
+              <div class="input-flex-container">
+                <div class="name">
+              <label for="fname">Full name:</label><br>
+              <input type="text" id="fname" name="fname" value="name"><br>
+            </div>
+            <div class="email">
+              <label for="email">Email:</label><br>
+              <input type="text" id="email" name="email" value="Doe"><br><br>
+            </div>
+            </div>
+            <label for="Message">Message:</label><br>
+            <textarea rows="7" cols="50" name="Message" form="usrform">Enter Message here...</textarea>
+            <button class="cta-btn cta2">Submit</button>
+
+            </form> 
+          </div>
+        </div>
+    </div>
+  </section>
   <!-- Script -->
   <script src="script.js"></script>
 </body>
