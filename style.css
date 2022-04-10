@@ -114,13 +114,14 @@ nav li:nth-of-type(5){
 .slide-out-2{
   animation: slide-out 0.3s linear 0.4s both;
 }
-
+/* slide out 3 is meant for skills which is under project */
 .slide-out-3{
-  animation: slide-out 0.3s linear 0.3s both;
+  animation: slide-out 0.3s linear 0.2s both;
 }
+/* slide out 4 is meant for project which is above skills */
 
 .slide-out-4{
-  animation: slide-out 0.3s linear 0.2s both;
+  animation: slide-out 0.3s linear 0.3s both;
 }
 
 .slide-out-5{
@@ -212,7 +213,7 @@ nav li a:hover {
 .bar3 {
   width: 35px;
   height: 2px;
-  background-color: rgb(0, 0, 0);
+  background-color: #4b5563;
   margin: 8px 0;
   transition: 0.4s;
 }
@@ -244,15 +245,16 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--primaryColor);
+  margin: 0 auto;
 }
 
 /* Home */
 
 section#home {
-  background-image: url("https://images.unsplash.com/photo-1554048612-b6a482bc67e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-image: url("https://topdoctors.co.uk/files/Image/large/174d738d2b71051f5059afd736689b04.jpg");
   background-size: cover;
   background-position: center center;
-  opacity: 0.5;
+  opacity: 0.7;
   position: relative;
 }
 
@@ -266,7 +268,7 @@ section#home a {
   text-decoration: none;
   font-size: 0.8rem;
   padding-bottom: 5px;
-  color: rgb(0, 0, 0);
+  color: white;
   font-weight: bold;
   border-bottom: 3px solid var(--primaryColor);
   
@@ -275,12 +277,19 @@ section#home a {
 .hero-content{
  width: 40%;
  position: absolute;
- left: 4%;
+ left: 50%;
  top: 50%;
- color: rgb(80, 106, 141);
+ transform: translate(-50%,-50%);
+ color: rgba(252, 207, 207, 0.781);
  font-family: 'Roboto', sans-serif;
  animation: hero-load 1s ease-in-out;
   animation-fill-mode: forwards; 
+  transition: 0.5s ease-in-out;
+}
+
+.hero-content:hover{
+color: white;
+transition: 0.5s ease-in-out;
 }
 
 @keyframes hero-load {
@@ -298,6 +307,7 @@ section#home a {
 section#about {
   background-color: #236267;
   min-height: 100vh;
+  max-width: 2000px;
 }
 
 .about-container{
@@ -316,7 +326,7 @@ section#about {
 
 .about-image img{
   object-fit: contain;
-  height: 90%;
+  height: 700px;
 }
 
 .about-text-container{
@@ -394,6 +404,7 @@ section#skills {
   background-color: #236267;
   min-height: 100vh;
   height: auto;
+  max-width: 2000px;
 }
 
 .projects-container{
@@ -542,6 +553,7 @@ section#projects {
   background-color: #236267;
   min-height: 100vh;
   height: auto;
+  max-width: 2000px;
 }
 
 .skills-outer-container{
@@ -724,6 +736,7 @@ background-color: black;
   transform: translateY(100px);
   opacity: 0;
   transition: all 1s ease;
+  transition-delay: 0.2s;
 
 }
 
@@ -747,7 +760,7 @@ background-color: black;
 .reveal3{
   transform: translateX(10px);
   opacity: 0;
-  transition: all 1s ease;
+  transition: all 1.4s ease;
 }
 
 .reveal3.active3 {
@@ -759,7 +772,7 @@ background-color: black;
 .reveal4{
   transform: translateX(-10px);
   opacity: 0;
-  transition: all 1s ease;
+  transition: all 1.4s ease;
 }
 
 .reveal4.active4 {
