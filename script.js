@@ -57,7 +57,7 @@ else {
 
 };
 
-// Testimonial nav content
+// Testimonial nav dynamic content
 const navOne = {
     h2: "We worked great together! Now I have a killer portfolio to show off.",
     p: "ANNA WILLIAMSON",
@@ -105,7 +105,7 @@ const navFour = {
     } else if (btn.id == "Tnav4") {
         colorSwitcher(tNavigation, btn)
     };
-
+// Highlighting selected nav
     function colorSwitcher(el, elHolder) {
         for (let C = 0; C < 4; C++) {
             el[C].style.backgroundColor = ""
